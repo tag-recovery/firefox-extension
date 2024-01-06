@@ -4,7 +4,7 @@ import { recordsHtml } from "./html";
 const elements = grabElements();
 const { username } = elements;
 
-const store = { data: [], expDays: undefined };
+const store = { data: [], expDays: undefined, prevText: "" };
 const storeProxy = new Proxy(store, {
   get(obj, prop) {
     return obj[prop];

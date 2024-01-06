@@ -152,8 +152,8 @@ TAKES THE SELECTED TAG
 AND MOVES IT TO THE FRONT AS THE LATEST TAG
 */
 function selectTag(username, textarea, prevTextArea, record) {
-  prevTextArea = record.tag;
-  textarea.value = prevTextArea;
+  storeProxy.prevText = record.tag;
+  textarea.value = storeProxy.prevText;
   storeProxy.data = shiftTags(record, storeProxy.data);
 }
 
@@ -173,7 +173,7 @@ RESETS THE TEXTAREA
 TO ITS PREVIOUS VALUE
 */
 function reset() {
-  textarea.value = prevTextArea;
+  textarea.value = storeProxy.prevText;
 }
 
 /* 
