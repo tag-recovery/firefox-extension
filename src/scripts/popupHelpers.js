@@ -26,6 +26,5 @@ export function injectOptionsEventListeners() {
 }
 export async function injectOptionsValues({ expDaysValue }) {
   const { expDaysNode } = getElements();
-  console.log(expDaysValue);
   expDaysNode.value = expDaysValue;
 }

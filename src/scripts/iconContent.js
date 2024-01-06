@@ -26,12 +26,9 @@ export function registerIcon(expDaysValue) {
   textarea.addEventListener(
     "keyup",
     debounce((e) => {
-      console.log(e.target.value);
       prevTextArea = e.target.value;
       const result = createTag(e.target.value);
       if (result.id) {
-        console.log([...storeProxy.data, result]);
-
         storeProxy.data = [...storeProxy.data, result];
       } else {
         console.log(result);
