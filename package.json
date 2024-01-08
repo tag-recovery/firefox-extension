@@ -9,8 +9,6 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31",
     "vite": "^5.0.6",
     "webextension-polyfill": "^0.10.0"
   },
