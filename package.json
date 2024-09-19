@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.0.13",
+    "vite": "^5.1.8",
     "webextension-polyfill": "^0.10.0"
   },
   "dependencies": {
